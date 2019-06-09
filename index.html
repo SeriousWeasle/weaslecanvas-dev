@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>WeasleCanvas 1.1</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='./static/css/main.css'>
+    <script src='/socket.io/socket.io.js'></script>
+</head>
+<body>
+    <canvas id='drawfield'></canvas>
+    <canvas id='client-layer'></canvas>
+    <canvas id='grid'></canvas>
+    <img src='./static/grid.png' id='grid-button' onmouseover='overUI(true)' onmouseout='overUI(false)' onclick='toggleGrid()'>
+    <div id='color-picker' onmouseover='overUI(true)' onmouseout='overUI(false)'>
+        <div class='color-row'>
+            <span class='color' id='color_0' onclick='selectColor(0)'></span>
+            <span class='color' id='color_1' onclick='selectColor(1)'></span>
+            <span class='color' id='color_2' onclick='selectColor(2)'></span>
+            <span class='color' id='color_3' onclick='selectColor(3)'></span>
+            <span class='color' id='color_4' onclick='selectColor(4)'></span>
+            <span class='color' id='color_5' onclick='selectColor(5)'></span>
+        </div>
+        <div class='color-row'>
+            <span class='color' id='color_6' onclick='selectColor(6)'></span>
+            <span class='color' id='color_7' onclick='selectColor(7)'></span>
+            <span class='color' id='color_8' onclick='selectColor(8)'></span>
+            <span class='color' id='color_9' onclick='selectColor(9)'></span>
+            <span class='color' id='color_10' onclick='selectColor(10)'></span>
+            <span class='color' id='color_11' onclick='selectColor(11)'></span>
+        </div>
+        <div class='color-row'>
+            <span class='color' id='color_12' onclick='selectColor(12)'></span>
+            <span class='color' id='color_13' onclick='selectColor(13)'></span>
+            <span class='color' id='color_14' onclick='selectColor(14)'></span>
+            <span class='color' id='color_15' onclick='selectColor(15)'></span>
+            <span class='color' id='color_16' onclick='selectColor(16)'></span>
+            <span class='color' id='color_17' onclick='selectColor(17)'></span>
+        </div>
+        <div class='color-row'>
+            <span class='color' id='color_18' onclick='selectColor(18)'></span>
+            <span class='color' id='color_19' onclick='selectColor(19)'></span>
+            <span class='color' id='color_20' onclick='selectColor(20)'></span>
+            <span class='color' id='color_21' onclick='selectColor(21)'></span>
+            <span class='color' id='color_22' onclick='selectColor(22)'></span>
+            <span class='color' id='color_23' onclick='selectColor(23)'></span>
+        </div>
+    </div>
+    <div id='align-point'></div>
+</body>
+<script src='./static/js/main.js'></script>
+</html>

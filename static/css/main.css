@@ -1,0 +1,163 @@
+body {
+    margin: 0 auto;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+#grid {
+    z-index: -1;
+    position: absolute;
+    opacity: 0.5;
+}
+
+#drawfield {
+    z-index: -2;
+    position: absolute;
+}
+
+#client-layer {
+    z-index: 0;
+    position: absolute;
+    opacity: 0.5;
+}
+
+#align-point {
+    width: 80px;
+}
+
+#color-picker {
+    margin-bottom: 48px;
+    z-index: 0;
+    width: 208px;
+    height: 144px;
+    background-color: rgba(0.4, 0.4, 0.4, 0.4);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#grid-button {
+    width: 64px;
+    height: 64px;
+    border: 1px solid black;
+    border-radius: 32px;
+    z-index: 0;
+    margin-left: 16px;
+    margin-bottom: 16px;
+}
+
+.color {
+    width: 32px;
+    height: 32px;
+    border: solid 1px #222222;
+}
+
+.color-row {
+    height: 34px;
+    width: 208px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#color_0 {
+    background-color: #000000;
+    border: solid white 1px;
+}
+
+#color_1 {
+    background-color: #FE0000;
+}
+
+#color_2 {
+    background-color: #FE9900;
+}
+
+#color_3 {
+    background-color: #CCFF00;
+}
+
+#color_4 {
+    background-color: #32FF00;
+}
+
+#color_5 {
+    background-color: #00FF65;
+}
+
+#color_6 {
+    background-color: #545454;
+}
+
+#color_7 {
+    background-color: #800001;
+}
+
+#color_8 {
+    background-color: #804C00;
+}
+
+#color_9 {
+    background-color: #657F00;
+}
+
+#color_10 {
+    background-color: #197F00;
+}
+
+#color_11 {
+    background-color: #007F32;
+}
+
+#color_12 {
+    background-color: #A8A8A8;
+}
+
+#color_13 {
+    background-color: #01FFFF;
+}
+
+#color_14 {
+    background-color: #0065FF;
+}
+
+#color_15 {
+    background-color: #3300FF;
+}
+
+#color_16 {
+    background-color: #CC00FF;
+}
+
+#color_17 {
+    background-color: #FF0198;
+}
+
+#color_18 {
+    background-color: #FFFFFF;
+}
+
+#color_19 {
+    background-color: #017F7E;
+}
+
+#color_20 {
+    background-color: #01327F;
+}
+
+#color_21 {
+    background-color: #19007F;
+}
+
+#color_22 {
+    background-color: #65017F;
+}
+
+#color_23 {
+    background-color: #7F014B;
+}
