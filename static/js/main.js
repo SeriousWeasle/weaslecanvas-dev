@@ -19,6 +19,23 @@ socket.on('requestPixelUpdate', function() {
     socket.emit('request_pixels', {off_x:canvasOffset.x, off_y: canvasOffset.y, width: viewPixels.x, height:viewPixels.y});
 });
 
+function zoom(type) {
+    if (type == 'in' && scale < 8) {
+        scale = scale * 2;
+        viewPixels.x = Math.round(window.innerWidth/(32*scale));
+        viewPixels.y = Math.round(window.innerHeight/(32*scale));
+        resizeCanvas();
+    }
+
+    if (type == 'out' && scale > 1/16) {
+        scale = scale/2;
+        viewPixels.x = Math.round(window.innerWidth/(32*scale));
+        viewPixels.y = Math.round(window.innerHeight/(32*scale));
+        resizeCanvas();
+    }
+    socket.emit('request_pixels', {off_x:canvasOffset.x, off_y: canvasOffset.y, width: viewPixels.x, height:viewPixels.y});
+}
+
 document.addEventListener('keydown', function(event) {
     if(event.keyCode == 37 || event.keyCode == 65) { //left
         canvasOffset.x = canvasOffset.x - 10/scale;
