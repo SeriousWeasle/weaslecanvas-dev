@@ -21,16 +21,16 @@ socket.on('requestPixelUpdate', function() {
 
 document.addEventListener('keydown', function(event) {
     if(event.keyCode == 37 || event.keyCode == 65) { //left
-        canvasOffset.x = canvasOffset.x - 10;
+        canvasOffset.x = canvasOffset.x - 10/scale;
     }
     if (event.keyCode == 68 || event.keyCode ==39) { //right
-        canvasOffset.x = canvasOffset.x + 10;
+        canvasOffset.x = canvasOffset.x + 10/scale;
     }
     if (event.keyCode == 87 || event.keyCode == 38) { //up
-        canvasOffset.y = canvasOffset.y - 10;
+        canvasOffset.y = canvasOffset.y - 10/scale;
     }
     if (event.keyCode == 83 || event.keyCode == 40) { //down
-        canvasOffset.y = canvasOffset.y + 10;
+        canvasOffset.y = canvasOffset.y + 10/scale;
     }
     if((event.keyCode == 90 || event.keyCode == 61) && scale < '8') {
         scale = scale*2;
